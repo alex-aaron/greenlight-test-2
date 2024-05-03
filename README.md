@@ -70,3 +70,14 @@ findBlog(blogs, "Which director had the best ten year period?");
 findBlog(blogs, "Best Film of 2023");
 // RETURNS => "(): ..."
 ```
+
+6. Create a function called `createForLoop` that takes in three paramters - `array`, `start`, `update`, and `direction`; `array` represents any array of items; `start` represents the starting index for the for loop to iterate over array; `update` represents a number to increment or decrement the counting variable in the for loop; `direction` will either be 'ascending' or 'descending'. If `direction` is 'ascending', the for loop should iterate normally through the array; if `direction` is 'descending' the for loop should should iterate through the array in reverse. As the for loop iterates, it should grab every array item it's accessing and push it to an output array. The function should return that output array.
+
+```javascript
+createForLoop(['a', 'b', 'c', 'd', 'e', 'f'], 1, 2, 'ascending'); 
+// RETURNS => ['b', 'd', 'f']
+
+createForLoop(['a', 'b', 'c', 'd', 'e', 'f'], 4, 2, 'descending');
+// RETURNS => ['e', 'c', 'a']
+```
+

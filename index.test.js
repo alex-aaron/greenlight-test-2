@@ -167,3 +167,18 @@ describe("#findBlog", function(){
         findBlog = original;
     });
 });
+
+describe("#createForLoop", function(){
+    let data = ['a', 'b', 'c', 'd', 'e', 'f'];
+    let ascending = createForLoop(['a', 'b', 'c', 'd', 'e', 'f'], 1, 2, 'ascending');
+    let descending = createForLoop(['a', 'b', 'c', 'd', 'e', 'f'], 4, 2, 'descending');
+    it('should return an array', function(){
+        assert.equal(Array.isArray(ascending), true);
+    });
+    it('should return an array of values in ascending order', function(){
+        assert.deepEqual(ascending, ['b', 'd', 'f']);
+    });
+    it('should return an array of values in descending order', function(){
+        assert.deepEqual(descending, ['e', 'c', 'a']);
+    });
+});
