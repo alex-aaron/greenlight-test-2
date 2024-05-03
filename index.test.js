@@ -5,7 +5,7 @@ mocha.setup('bdd');
 const assert = window.assert = chai.assert;
 const expect = window.expect = chai.expect;
 const should = window.should = chai.should();
-// const _code = window.codeTester.getCodeToTest();
+const _code = window.codeTester.getCodeToTest();
 
 describe("#mapBlogs", function(){
     it('should return an array', function(){

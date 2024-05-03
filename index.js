@@ -101,15 +101,5 @@ function findBlog(array, title){
 
 // Problem #6 //
 function createForLoop(array, start, update, direction){
-    let output = [];
-    if (direction === 'ascending'){
-      for (let i = start; i < array.length; i+=update){
-        output.push(array[i]);
-      }
-    } else {
-      for (let i = start; i >= 0; i-=update){
-        output.push(array[i]);
-      }
-    }
-    return output;
-  }
+    
+}
